@@ -24,7 +24,7 @@ public class Cachorro {
         }else if (acao.equals("vai dormir!")){
             this.estadoDeEspirito = "Bravo";
         } else {
-            this.estadoDeEspirito = "Neutro";
+            this.estadoDeEspirito = "Neutroo";
         }
         return estadoDeEspirito;
     }
