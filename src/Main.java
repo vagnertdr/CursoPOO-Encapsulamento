@@ -9,19 +9,21 @@ public class Main {
         cachorro1 = new Cachorro();
          */
 
-        // Forma resumida e comumente utilizada abaixo
         Cachorro cachorro1 = new Cachorro();
+        Cachorro cachorro2 = new Cachorro("Puppy", "Marrom", 25, 5.5, "nada", 5);
 
-        cachorro1.nome = "Puppy";
-        cachorro1.cor = "Marron";
-        cachorro1.altura = 25;
-        cachorro1.peso = 5.5;
-        cachorro1.tamanhoDoRabo = 5;
+        // O Código abaixo nao é mais necessario pois acima ja esta sendo usado o construtor
+//        cachorro1.setNome("Puppy"); // passando o nome para a classe encapsulada
+//        cachorro1.setCor("Marrom");
+//        cachorro1.setAltura(25);
+//        cachorro1.setPeso(5.5);
+//        cachorro1.setTamanhoDoRabo(5);
 
-        System.out.println(cachorro1);
-        cachorro1.latir();
-        System.out.println("O cachorro pegou uma " + cachorro1.pegar());
-
+        System.out.println(cachorro2.getNome());
+        System.out.println(cachorro2.getPeso());
+        System.out.println("O cachorro está " + cachorro1.interagir("carinho"));
+        System.out.println("O cachorro está " + cachorro1.interagir("vai dormir!"));
+        System.out.println("O cachorro está " + cachorro1.interagir("pisar na patinha"));
         System.out.println("O cachorro está " + cachorro1.interagir(""));
     }
 }
